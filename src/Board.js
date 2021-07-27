@@ -8,12 +8,13 @@ const arrBoard = [
     '0','0','0',
     '0','0','0'
   ];
-const Board = () =>  {
+  
+const Board = (props) =>  {
 
     const [player,setPlayer] = useState('X')
+    //const Winer = props.win;
     
-    
-    const ReciveData = (pos,player) => {
+    const ReciveData = (pos,player,Winer=props.win) => {
 
         arrBoard[pos] = player;
 
@@ -31,49 +32,51 @@ const Board = () =>  {
             arrBoard[1] === 'X' &&
             arrBoard[2] === 'X' ){
 
-                console.log(`X WIN!`)
+                Winer('X WIN!')
+                return
                
             }else if( arrBoard[3] === 'X' && 
                       arrBoard[4] === 'X' &&
                       arrBoard[5] === 'X' ){
 
-                console.log(`X WIN!`)
+                         Winer('X WIN!')
+                
                       }
                       else if( arrBoard[6] === 'X' && 
                                arrBoard[7] === 'X' &&
                                arrBoard[8] === 'X' ){
           
-                          console.log(`X WIN!`)
+                                   Winer('X WIN!')
                                }
                                else if( arrBoard[0] === 'X' && 
                                         arrBoard[3] === 'X' &&
                                         arrBoard[6] === 'X' ){
                                 
-                                   console.log(`X WIN!`)
+                                             Winer('X WIN!')
                                         }
                                         else if( arrBoard[1] === 'X' && 
                                                  arrBoard[4] === 'X' &&
                                                  arrBoard[7] === 'X' ){
                             
-                                            console.log(`X WIN!`)
+                                                  Winer('X WIN!')
                                                  }
                                                  else if( arrBoard[2] === 'X' && 
                                                           arrBoard[5] === 'X' &&
                                                           arrBoard[8] === 'X' ){
                                      
-                                                     console.log(`X WIN!`)
+                                                            Winer('X WIN!')
                                                           }
                                                           else if( arrBoard[0] === 'X' && 
                                                                    arrBoard[4] === 'X' &&
                                                                    arrBoard[8] === 'X' ){
                                               
-                                                              console.log(`X WIN!`)
+                                                                      Winer('X WIN!')
                                                                    }
                                                                    else if( arrBoard[2] === 'X' && 
                                                                             arrBoard[4] === 'X' &&
                                                                             arrBoard[6] === 'X' ){
                                                        
-                                                                       console.log(`X WIN!`)
+                                                                                Winer('X WIN!')
                                                                             }
                                                                             /* ***** check O ********** */
                                                                             
@@ -81,49 +84,50 @@ const Board = () =>  {
                                                                                      arrBoard[1] === 'O' &&
                                                                                      arrBoard[2] === 'O' ){
                                                                 
-                                                                                console.log(`O WIN!`)
+                                                                                          Winer('O WIN!')
                                                                 
                                                                             }else if( arrBoard[3] === 'O' && 
                                                                                       arrBoard[4] === 'O' &&
                                                                                       arrBoard[5] === 'O' ){
                                                                 
-                                                                                console.log(`O WIN!`)
+                                                                                          Winer('O WIN!')
                                                                                       }
                                                                                       else if( arrBoard[6] === 'O' && 
                                                                                                arrBoard[7] === 'O' &&
                                                                                                arrBoard[8] === 'O' ){
                                                                           
-                                                                                          console.log(`O WIN!`)
+                                                                                                    Winer('O WIN!')
+                                                                                                    
                                                                                                }
                                                                                                else if( arrBoard[0] === 'O' && 
                                                                                                         arrBoard[3] === 'O' &&
                                                                                                         arrBoard[6] === 'O' ){
                                                                                                 
-                                                                                                   console.log(`O WIN!`)
+                                                                                                         Winer('O WIN!')
                                                                                                         }
                                                                                                         else if( arrBoard[1] === 'O' && 
                                                                                                                  arrBoard[4] === 'O' &&
                                                                                                                  arrBoard[7] === 'O' ){
                                                                                             
-                                                                                                            console.log(`O WIN!`)
+                                                                                                                   Winer('O WIN!')
                                                                                                                  }
                                                                                                                  else if( arrBoard[2] === 'O' && 
                                                                                                                           arrBoard[5] === 'O' &&
                                                                                                                           arrBoard[8] === 'O' ){
                                                                                                      
-                                                                                                                     console.log(`O WIN!`)
+                                                                                                                             Winer('O WIN!')
                                                                                                                           }
                                                                                                                           else if( arrBoard[0] === 'O' && 
                                                                                                                                    arrBoard[4] === 'O' &&
                                                                                                                                    arrBoard[8] === 'O' ){
                                                                                                               
-                                                                                                                              console.log(`O WIN!`)
+                                                                                                                                       Winer('O WIN!')
                                                                                                                                    }
                                                                                                                                    else if( arrBoard[2] === 'O' && 
                                                                                                                                             arrBoard[4] === 'O' &&
                                                                                                                                             arrBoard[6] === 'O' ){
                                                                                                                        
-                                                                                                                                       console.log(`O WIN!`)
+                                                                                                                                                 Winer('O WIN!')
                                                                                                                                             }
 /********************************************************************************************************************************************************************** */                                                                                                                                            
 console.log(`end of function`)

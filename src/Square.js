@@ -18,7 +18,7 @@ const Square = (props) => {
         
             < button className='square'
 
-            onClick={ Trans } >{player}</button>
+            onClick={ Trans } > {player} </ button >
         
 
     )
