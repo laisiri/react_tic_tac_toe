@@ -1,22 +1,15 @@
 //import logo from './logo.svg';
 //import './App.css';
-import Board from './Board';
-import Chart from './Chart';
-import { useState } from 'react';
 
-function App() {
-  const [won,setWon] = useState(' ');
-  let Winer = (win) => {
+import React from 'react';
+//import Main from './exper-1/Main'
+import Main from './component/Main'
 
-    setWon(win);
+function App(props) {
+  return (
 
-  }
-    return (
-    <div className="App">
-      <Board win={Winer}/>
-      <Chart won={won}/>
-    </div>
-  );
+    < Main />
+  )  
 }
 
 export default App;

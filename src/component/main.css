@@ -1,0 +1,45 @@
+*{box-sizing: border-box;}
+
+.main{
+
+    display: grid;
+    width: 40%;
+    height: 600px;
+    margin-left:30%;
+    padding: 15px;
+    grid-gap: 15px;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    background-color: darkseagreen;
+    
+}
+
+.btnMain{
+    grid-column: 1/4;
+}
+.btnMain > button {
+    width: 15%;
+    height: 20%;
+    font-size: 20px;
+    border:none;
+    background-color: cyan;
+    color:rgb(17, 41, 41);
+    
+}
+.boards{
+    position: relative;
+    background-color: darkgray;
+    width: 100%;
+    height: 100%;
+}
+
+.boards > button {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 50px;
+    padding:20px;
+    border:none;
+}
+
+
