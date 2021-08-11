@@ -98,42 +98,42 @@ const Main = () => {
 
         }else if(arr[0] === 'O'&& arr[1] === 'O'&& arr[2] === 'O'){
 
-            console.log('O WIN!');
+            console.log('O WIN! 1');
             me = 'O';
 
         }else if(arr[3] === 'O'&& arr[4] === 'O'&& arr[5] === 'O'){
 
-            console.log('O WIN!');
+            console.log('O WIN! 2');
             me = 'O';
 
-        }else if(arr[6]&&arr[7]&&arr[8] === 'O'){
+        }else if(arr[6] === 'O' && arr[7] === 'O' && arr[8] === 'O'){
 
-            console.log('O WIN!');
+            console.log('O WIN! 3');
             me = 'O';
 
         }else if(arr[0] === 'O' && arr[3] === 'O'&& arr[6] === 'O'){
 
-            console.log('O WIN!');
+            console.log('O WIN! 4');
             me = 'O';
 
         }else if(arr[1] === 'O' && arr[4] === 'O' && arr[7] === 'O'){
 
-            console.log('O WIN!');
+            console.log('O WIN! 5');
             me = 'O';
 
         }else if(arr[2] === 'O'&& arr[5] === 'O' && arr[8] === 'O'){
 
-            console.log('O WIN!');
+            console.log('O WIN! 6');
             me = 'O';
 
         }else if(arr[0] === 'O' && arr[4] === 'O' && arr[8] === 'O'){
 
-            console.log('O WIN!')
+            console.log('O WIN! 7')
             me = 'O';
 
         }else if(arr[2] === 'O' && arr[4] === 'O' && arr[6] === 'O'){
 
-            console.log('O WIN!')
+            console.log('O WIN! 8')
             me = 'O';
             
         }else{
